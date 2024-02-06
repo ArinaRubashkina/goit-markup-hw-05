@@ -392,3 +392,31 @@ footer .container{
 .footer-media-icon{
    fill: #f4f4fd;
 }
+.form-container{
+    display: flex;
+   column-gap: 26px;
+}
+.form{
+    width: 408px;
+    height: 584px;
+    margin-top: 72px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.form-text{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--navy-blue);
+}
+input{
+    font-family: inherit;
+    border: 1px solid #2E2F42;
+    border-radius: 4px;
+}
+textarea{
+    resize: none;
+}
