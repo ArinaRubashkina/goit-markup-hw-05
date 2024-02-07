@@ -392,31 +392,48 @@ footer .container{
 .footer-media-icon{
    fill: #f4f4fd;
 }
-.form-container{
-    display: flex;
-   column-gap: 26px;
+.backdrop{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #434455aa;
 }
-.form{
+.modal{
     width: 408px;
-    height: 584px;
-    margin-top: 72px;
-    margin-left: 24px;
-    margin-right: 24px;
+    min-height: 584px;
+    background-color: #FCFCFC;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 72px 24px;
 }
-.form-text{
-    font-family: var(--font-family);
+.modal-close{
+    width: 24px;
+    height: 24px;
+    background-color: #E7E9FC;
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    top: 24px;
+    right: 24px;
+    position: absolute;
+}
+.modal-title{
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
-    color: var(--navy-blue);
+    color: #2e2f42;
+    margin-bottom: 5px;
 }
-input{
-    font-family: inherit;
-    border: 1px solid #2E2F42;
+.modal-input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid hsla(237, 18%, 22%, 0.4);
     border-radius: 4px;
-}
-textarea{
-    resize: none;
+    margin-bottom: 8px;
 }
