@@ -474,7 +474,7 @@ footer .container{
 }
 .modal-input-wrap{
     position: relative;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 .modal-close-icon{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -521,7 +521,6 @@ textarea::placeholder{
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
     padding-top: 8px;
-    padding-left: 16px;
 }
 .checkbox-div{
     margin-bottom: 24px;
@@ -540,6 +539,8 @@ textarea::placeholder{
     border: none;
     display: block;
     cursor: pointer;
+    text-align: center;
+    margin: auto;
      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .submit-button:hover{
@@ -559,24 +560,9 @@ textarea::placeholder{
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
 }
-input[type="checkbox"]:checked {
-    border: none;
-	fill: #F4F4FD;
-}
 .modal-link{
     color: #4d5ae5;
 }
-.visually-hidden{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;}
 .checkbox-span{
         width: 16px;
         height: 16px;
@@ -589,7 +575,7 @@ input[type="checkbox"]:checked {
         justify-content: center;
         fill: transparent;
     }
-.privacy-policy {
+.modal-link{
         color: #4D5AE5;
         font-size: 12px;
         font-style: normal;
@@ -628,7 +614,7 @@ input[type="checkbox"]:checked {
 .subscribe-button{
     min-width: 165px;
     height: 40px;
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     font-family: "Roboto", sans-serif;
@@ -644,4 +630,12 @@ input[type="checkbox"]:checked {
 }
 .button-icon{
     margin-left: 16px;
+}
+.checkbox:checked + .modal-label .checkbox-span{
+    background-color: #404BBF;
+    border: none;
+    fill: #f4f4fd;
+}
+.checkbox:focus + .modal-label .checkbox-span{
+    border-color: #4D5AE5;
 }
