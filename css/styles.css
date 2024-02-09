@@ -637,4 +637,6 @@ textarea::placeholder{
 }
 .checkbox:checked + .modal-label span{
     background-color: #404BBF;
+    border: none;
+    fill: #f4f4fd;
 }
